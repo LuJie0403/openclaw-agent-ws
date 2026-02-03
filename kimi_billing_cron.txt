@@ -1,0 +1,24 @@
+# Kimi账单自动查询 - Cron定时任务配置
+# 每月3号自动执行Kimi API使用量查询任务
+
+# 添加以下行到crontab中:
+# 0 9 3 * * /home/lujie/.openclaw/workspace/run_kimi_billing_check.sh >> /home/lujie/.openclaw/workspace/logs/kimi_billing_cron.log 2>&1
+
+# 解释:
+# 0 9 3 * * 表示每月3号上午9点执行
+# >> 追加输出到日志文件
+# 2>&1 将错误输出也重定向到日志文件
+
+# 安装方法:
+# 1. 确保脚本有可执行权限: chmod +x /home/lujie/.openclaw/workspace/run_kimi_billing_check.sh
+# 2. 编辑crontab: crontab -e
+# 3. 添加上面的定时任务行
+# 4. 保存并退出
+
+# 测试方法:
+# 可以临时设置为每分钟执行来测试:
+# * * * * * /home/lujie/.openclaw/workspace/run_kimi_billing_check.sh >> /home/lujie/.openclaw/workspace/logs/kimi_billing_cron.log 2>&1
+# 测试完成后记得改回每月3号执行
+
+# 日志文件路径
+LOG_FILE="/home/lujie/.openclaw/workspace/logs/kimi_billing_cron.log"

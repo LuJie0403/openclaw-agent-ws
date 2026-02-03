@@ -1,0 +1,5 @@
+- **Name:** 路杰 (Lu Jie)
+- **What to call them:** 路杰
+- **Pronouns:** he/him
+- **Timezone:** UTC+8 (China)
+- **Notes:** Digital native, persistent when trying to connect, uses both WhatsApp and Telegram. Wants me to be his digital avatar/化身 in the digital world.
