@@ -38,3 +38,6 @@ Skills are shared. Your setup is yours. Keeping them apart means you can update 
 ---
 
 Add whatever helps you do your job. This is your cheat sheet.
+
+### GitHub
+- Token: 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
