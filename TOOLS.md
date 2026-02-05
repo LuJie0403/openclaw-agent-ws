@@ -41,3 +41,10 @@ Add whatever helps you do your job. This is your cheat sheet.
 
 ### GitHub
 - Token: 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
+
+### 阿里云MySQL数据库
+- Host: 120.27.250.73
+- Port: 3306
+- User: openclaw_aws
+- Password: 9!wQSw@12sq
+- Database: iterlife4openclaw
