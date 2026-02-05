@@ -20,10 +20,10 @@ git commit -m "Daily backup: $(date +%Y-%m-%d_%H:%M)"
 # 推送到远程当日分支
 git push origin $BRANCH_NAME
 
-# 切换回main分支并合并
-git checkout main
+# 切换回master分支并合并
+git checkout master
 git merge $BRANCH_NAME --no-ff -m "Merge daily backup $(date +%Y-%m-%d_%H:%M)"
-git push origin main
+git push origin master
 
 # 保留当日分支不删除
 echo "Backup completed: branch $BRANCH_NAME retained"
