@@ -146,7 +146,7 @@ openclaw-agent-ws/
 
 ## 📞 联系方式
 
-- **维护者**: AI Assistant for 路杰
+- **维护者**: AI Assistant for @Iter_1024
 - **邮箱**: lujie0403@gmail.com
 - **项目地址**: https://github.com/LuJie0403/openclaw-agent-ws
 
