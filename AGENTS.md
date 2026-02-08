@@ -31,7 +31,7 @@ Don't ask permission. Just do it.
 
 **1. Daily Log (18:00):**
 - Organize all daily work at 18:00 sharp.
-- Save to `worklog/YYYY-MM-DD.md`.
+- Save to `worklog/daily-worklog-YYYY-MM-DD.md`.
 - Ensure strictly consistent naming (no extra words).
 
 **2. Sync & Version Control:**
