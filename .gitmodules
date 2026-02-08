@@ -1,3 +1,0 @@
-[submodule "expense_web_repo"]
-	path = expense_web_repo
-	url = git@github.com:LuJie0403/openclaw-expenses.git
