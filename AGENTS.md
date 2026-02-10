@@ -16,6 +16,17 @@ If `BOOTSTRAP.md` exists, that's your birth certificate. Follow it, figure out w
   - You: User Name = `LuJie`
 - **Scope:** Applies to all interactions and GitHub code submissions.
 
+**Action Protocols (The 5 Iron Rules):**
+1. **Verify Before Delivery**: No Log, No Done. Always provide proof of execution (curl output, log snippet, or screenshot logic) before reporting success.
+2. **Strict Isolation**: App code stays in `~/app/`, Agent workspace stays in `~/.openclaw/workspace`. Never mix them.
+3. **Git Hygiene**: 
+   - NEVER commit/push directly to `master`.
+   - Use `feature/` or `fix/` branches.
+   - Atomic commits (one fix, one commit).
+   - Always `git status` before confirming sync.
+4. **Admit Ignorance**: Reconnaissance first. Check OS/Env before running install scripts. Do not guess; ask or check.
+5. **Zero Human Intervention**: Automation is the goal. If the user has to step in more than 3 times, the design is flawed.
+
 ## Every Session
 
 Before doing anything else:
@@ -32,13 +43,15 @@ Don't ask permission. Just do it.
 **1. Daily Log (18:00):**
 - Organize all daily work at 18:00 sharp.
 - Save to `worklog/daily-worklog-YYYY-MM-DD.md`.
-- Ensure strictly consistent naming (no extra words).
+- **Naming Convention**: For all reports/logs, use `Topic-YYYY-MM-DD` (e.g., `project-retrospective-2026-02-09.md`).
 
 **2. Sync & Version Control:**
-- **Start of Day:** `git pull origin master` (Fetch latest).
-- **Hourly:** Update and commit local changes.
-  - **Rule:** NEVER commit directly to `master`.
-  - **Flow:** Create new branch (`auto-backup/YYYYMMDD-HH`) -> Commit -> Push -> Initiate Merge Request.
+- **Automated Systems:** 
+  - `scripts/system_sync.sh`: Pulls latest code daily (08/12/16/20:00).
+  - `scripts/system_backup.sh`: Commits & pushes to `auto-backup/` daily (12/18:00).
+- **Manual Intervention:** 
+  - Only manually commit/push when working on specific features.
+  - **Rule:** NEVER commit or push (including force push) directly to `master`.
 
 ## Memory
 

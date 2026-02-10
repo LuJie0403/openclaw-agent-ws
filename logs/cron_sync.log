@@ -1,0 +1,29 @@
+[Mon Feb  9 12:00:01 CST 2026] Starting Sync...
+From github.com:LuJie0403/openclaw-agent-ws
+ * branch            master     -> FETCH_HEAD
+warning: fetch updated the current branch head.
+fast-forwarding your working tree from
+commit 2a14f31bce34c8369e9d5b882fe49cca4dc02169.
+error: Your local changes to the following files would be overwritten by merge:
+	AGENTS.md
+Please commit your changes or stash them before you merge.
+error: The following untracked working tree files would be overwritten by merge:
+	logs/cron_backup.log
+	logs/cron_sync.log
+	personal-data/expense-project-retrospective-2026-02-09.md
+	scripts/system_backup.sh
+	scripts/system_sync.sh
+Please move or remove them before you merge.
+Aborting
+fatal: Cannot fast-forward your working tree.
+After making sure that you saved anything precious from
+$ git diff 2a14f31bce34c8369e9d5b882fe49cca4dc02169
+output, run
+$ git reset --hard
+to recover.
+[Mon Feb  9 12:00:02 CST 2026] Sync Failed
+[Mon Feb  9 16:00:01 CST 2026] Starting Sync...
+From github.com:LuJie0403/openclaw-agent-ws
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+[Mon Feb  9 16:00:02 CST 2026] Sync Success
