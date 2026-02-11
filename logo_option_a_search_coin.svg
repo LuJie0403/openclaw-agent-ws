@@ -1,0 +1,23 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="coinGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFD700;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFA000;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="4" dy="4" stdDeviation="4" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- 放大镜手柄 -->
+  <path d="M320 320 L450 450" stroke="#333" stroke-width="60" stroke-linecap="round" />
+  
+  <!-- 金币主体 (也是放大镜镜片) -->
+  <circle cx="220" cy="220" r="160" fill="url(#coinGrad)" filter="url(#shadow)" stroke="#FFF" stroke-width="15" />
+  
+  <!-- 问号镂空 -->
+  <text x="220" y="290" font-family="Arial, sans-serif" font-weight="bold" font-size="200" text-anchor="middle" fill="#FFF" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.2);">?</text>
+  
+  <!-- 装饰光泽 -->
+  <path d="M140 140 Q 220 100 300 140" fill="none" stroke="#FFF" stroke-width="10" stroke-opacity="0.6" stroke-linecap="round" />
+</svg>
