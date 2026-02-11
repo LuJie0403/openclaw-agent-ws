@@ -3,4 +3,4 @@
 - **Pronouns:** he/him
 - **Timezone:** UTC+8 (China)
 - **Language:** Simplified Chinese (preferred)
-- **Notes:** Digital native, persistent when trying to connect, uses both WhatsApp and Telegram. Wants me to be his digital avatar/化身 in the digital world.
+- **Notes:** Digital native, persistent when trying to connect, uses both WhatsApp and Telegram. Wants me to be his digital avatar/化身 in the digital world. Prefers to see the thought/reasoning process in all responses.

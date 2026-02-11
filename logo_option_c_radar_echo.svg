@@ -1,0 +1,28 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <rect width="512" height="512" rx="60" fill="#1A1A1A" />
+  
+  <!-- 雷达波纹 -->
+  <circle cx="256" cy="256" r="100" stroke="#00E676" stroke-width="2" fill="none" opacity="0.3" />
+  <circle cx="256" cy="256" r="160" stroke="#00E676" stroke-width="2" fill="none" opacity="0.2" />
+  <circle cx="256" cy="256" r="220" stroke="#00E676" stroke-width="2" fill="none" opacity="0.1" />
+  
+  <!-- 扫描扇区 -->
+  <path d="M256 256 L476 256 A220 220 0 0 0 366 65 Z" fill="url(#scanGrad)" opacity="0.4" />
+  <defs>
+    <linearGradient id="scanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00E676;stop-opacity:0" />
+      <stop offset="100%" style="stop-color:#00E676;stop-opacity:0.8" />
+    </linearGradient>
+  </defs>
+
+  <!-- 中心核心 (钱) -->
+  <rect x="206" y="226" width="100" height="60" rx="10" fill="#FFF" />
+  <path d="M206 240 L256 260 L306 240" fill="none" stroke="#333" stroke-width="2" />
+  <circle cx="256" cy="256" r="10" fill="#FFA000" />
+  
+  <!-- 发现点 (钱去哪了) -->
+  <circle cx="380" cy="150" r="12" fill="#FF5252">
+    <animate attributeName="opacity" values="1;0;1" dur="1.5s" repeatCount="indefinite" />
+  </circle>
+  <text x="400" y="155" fill="#FF5252" font-family="Arial" font-size="24" font-weight="bold">¥</text>
+</svg>
