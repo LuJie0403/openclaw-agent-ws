@@ -4,7 +4,7 @@ After=network.target
 
 [Service]
 WorkingDirectory=/home/openclaw-expenses/apps/openclaw-expenses/backend
-ExecStart=/home/openclaw-expenses/apps/openclaw-expenses/backend/venv/bin/uvicorn main_v2:app --host 0.0.0.0 --port 8000
+ExecStart=/home/openclaw-expenses/apps/openclaw-expenses/backend/venv/bin/uvicorn app.main:app --host 0.0.0.0 --port 8000
 Environment="PATH=/home/openclaw-expenses/apps/openclaw-expenses/backend/venv/bin:/usr/bin:/bin"
 Restart=always
 RestartSec=5
