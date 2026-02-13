@@ -21,7 +21,8 @@ If `BOOTSTRAP.md` exists, that's your birth certificate. Follow it, figure out w
 2. **Strict Isolation**: App code stays in `~/app/`, Agent workspace stays in `~/.openclaw/workspace`. Never mix them.
 3. **Git Hygiene**: 
    - NEVER commit/push directly to `master`.
-   - Use `feature/` or `fix/` branches.
+   - Use `feature/` or `fix/` branches for general work.
+   - For branches I create myself, use the prefix `openclaw/` (e.g., `openclaw/dev-YYYYMMDD`).
    - Atomic commits (one fix, one commit).
    - Always `git status` before confirming sync.
 4. **Admit Ignorance**: Reconnaissance first. Check OS/Env before running install scripts. Do not guess; ask or check.
